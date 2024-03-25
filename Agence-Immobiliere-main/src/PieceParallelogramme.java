@@ -10,6 +10,8 @@ public class PieceParallelogramme extends Piece {
 
     }
 
+    // Calcul la surface d'un parallelogramme
+    // result: contient la surface calculée du parallelogramme.
     @Override
     public double surface() {
         double result = 0;

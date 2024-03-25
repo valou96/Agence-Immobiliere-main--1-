@@ -9,6 +9,8 @@ public class PieceQuadrilatere extends Piece {
 
     }
 
+    // Calcul la surface d'un quadrilatère
+    // result: contient la surface calculée du quadrilatère.
     @Override
     public double surface() {
         double result = 0;

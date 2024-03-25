@@ -7,6 +7,8 @@ public class PieceCirculaire extends Piece {
 
     }
 
+    // calcule la surface d'une pièce circulaire.
+    // result: représente la surface de la pièce circulaire en mètres carrés.
     @Override
     public double surface() {
         double result = 0;

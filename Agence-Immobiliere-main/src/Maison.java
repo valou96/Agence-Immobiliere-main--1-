@@ -16,6 +16,12 @@ public class Maison extends BienImmobilier {
 
     }
 
+    // convertit l'objet Maison en une chaîne de caractères résumant ses
+    // informations principales.
+    // Result : Une chaîne de caractères contenant le type de bien ("Maison
+    // individuelle"), la surface du terrain,
+    // la présence d'une piscine et les informations de la classe parente
+    // (BienImmobilier).
     @Override
     public String toString() {
         String resultat = "";

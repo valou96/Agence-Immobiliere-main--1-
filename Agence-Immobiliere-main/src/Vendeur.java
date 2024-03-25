@@ -11,6 +11,8 @@ public class Vendeur {
         this.numeroTelephone = numeroTelephone;
     }
 
+    // Convertit l'objet Vendeur en une chaine de caractères.
+    // result: Une chaîne de caractères contenant les informations du vendeur.
     @Override
     public String toString() {
         return "Vendeur [email=" + email + ", nom=" + nom + ", numeroTelephone=" + numeroTelephone + ", prenom="

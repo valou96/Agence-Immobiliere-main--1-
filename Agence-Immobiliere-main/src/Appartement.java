@@ -16,6 +16,9 @@ public class Appartement extends BienImmobilier {
 
     }
 
+    // Détermine et retourne le type de bien immobilier en fonction du nombre de
+    // pièces principales.
+    // result : Une chaîne de caractères indiquant le type de bien.
     public String typeBien() {
         int nbPiece = 0;
         for (Piece piece : _piece) {
@@ -31,6 +34,8 @@ public class Appartement extends BienImmobilier {
 
     }
 
+    // Convertit l'objet Annonce en une chaine de caractères.
+    // result: Une chaîne de caractères contenant les informations de l'appartement.
     @Override
     public String toString() {
         String resultat = "";
