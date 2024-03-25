@@ -7,6 +7,8 @@ import org.junit.Test;
 public class TestAgenceImmobiliere {
     private static final double DELTA = 1e-2;
 
+    // vérifie le fonctionnement de la fonction surface dans la classe
+    // PieceParallelogramme
     @Test
     public void TestpieceParallelogramme() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);
@@ -14,6 +16,8 @@ public class TestAgenceImmobiliere {
         assertEquals(20.0, pieceParallelogramme.surface(), DELTA);
     }
 
+    // vérifie le fonctionnement de la fonction surface dans la classe
+    // PieceQuadrilatère
     @Test
     public void TestpieceQuadrilataire() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);
@@ -22,6 +26,8 @@ public class TestAgenceImmobiliere {
 
     }
 
+    // vérifie le fonctionnement de la fonction surface dans la classe
+    // PieceTrapezoidale
     @Test
     public void TestTrapezoide() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);
@@ -29,6 +35,8 @@ public class TestAgenceImmobiliere {
         assertEquals(90.0, pieceTrapezoidale.surface(), DELTA);
     }
 
+    // vérifie le fonctionnement de la fonction surface dans la classe
+    // PieceTriangulaire
     @Test
     public void TestTriangulaire() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);
@@ -36,6 +44,8 @@ public class TestAgenceImmobiliere {
         assertEquals(17.5, pieceTriangulaire.surface(), DELTA);
     }
 
+    // Ce test unitaire vise à vérifier le fonctionnement des méthodes
+    // surfaceHabitable et surfaceNonHabitable dans la classe Appartement
     @Test
     public void TestSurfaceHabitable() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);
@@ -48,6 +58,7 @@ public class TestAgenceImmobiliere {
         assertEquals(9.0, appartement.surfaceNonHabitable(), DELTA);
     }
 
+    // vérifie le fonctionnement de la méthode typeBien dans la classe Appartement
     @Test
     public void TypeBien() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);
@@ -61,6 +72,7 @@ public class TestAgenceImmobiliere {
 
     }
 
+    // vérifie le fonctionnement de la méthode prix dans la classe Annonce
     @Test
     public void prix() {
         TypePiece chambre = new TypePiece(TypePiece.CHAMBRE, true, true);

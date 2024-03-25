@@ -8,6 +8,8 @@ public class PieceTriangulaire extends Piece {
         this._hauteur = unehauteur;
     }
 
+    // Calcul la surface d'une Piece Triangulaire
+    // result: contient la surface calculée du triangle
     @Override
     public double surface() {
         double result = 0;

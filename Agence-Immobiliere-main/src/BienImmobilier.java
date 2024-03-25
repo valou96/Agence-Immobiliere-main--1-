@@ -16,6 +16,8 @@ public abstract class BienImmobilier {
         this._piece = new ArrayList<Piece>();
     }
 
+    // calcule la surface habitable totale du bien immobilier.
+    // result: Un double représentant la surface habitable totale en mètres carrés.
     public double surfaceHabitable() {
         double result = 0;
         for (Piece piece : _piece) {
@@ -27,6 +29,9 @@ public abstract class BienImmobilier {
         return result;
     }
 
+    // calcule la surface non habitable totale du bien immobilier.
+    // result : un double représentant la surface non habitable totale en mètres
+    // carrés.
     public double surfaceNonHabitable() {
         double result = 0;
         for (Piece piece : _piece) {
@@ -37,6 +42,7 @@ public abstract class BienImmobilier {
         }
         return result;
     }
+    // ajoute une pièce à la collection de pièces du bien immobilier.
 
     public void ajouterPiece(Piece piece) {
         if (piece != null) {
@@ -44,6 +50,10 @@ public abstract class BienImmobilier {
         }
     }
 
+    // convertit l'objet BienImmobilier en une chaîne de caractères résumant ses
+    // informations principales.
+    // result: Une chaîne de caractères contenant la localisation, la description
+    // des pièces, la surface habitable et non habitable du bien.
     @Override
     public String toString() {
         DecimalFormat numberFormat = new DecimalFormat("#.00");

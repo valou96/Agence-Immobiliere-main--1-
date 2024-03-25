@@ -10,6 +10,10 @@ public abstract class Piece {
 
     public abstract double surface();
 
+    // convertit l'objet Piece en une chaîne de caractères résumant ses informations
+    // principales.
+    // result: Une chaîne de caractères contenant le type de la pièce, sa surface et
+    // des explications sur la construction de la chaîne.
     @Override
     public String toString() {
         String result;

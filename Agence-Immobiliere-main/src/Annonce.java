@@ -16,6 +16,7 @@ public class Annonce {
 
     }
 
+    // Calcul le prix total d'un logment
     public double prix() {
         double result = 0;
         result = _logement.surfaceHabitable() * _prixM2Habitable + _logement.surfaceNonHabitable()
@@ -23,6 +24,8 @@ public class Annonce {
         return result;
     }
 
+    // Convertit l'objet Annonce en une chaine de caractères.
+    // result: Une chaîne de caractères contenant les informations de l'annonce.
     @Override
     public String toString() {
         String result;

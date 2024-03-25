@@ -11,6 +11,8 @@ public class PieceTrapezoidale extends Piece {
         this._hauteur = uneHauteur;
     }
 
+    // Calcul la surface d'une Piece Trapezoidale
+    // result: contient la surface calculée du Trapezoidale.
     @Override
     public double surface() {
         double result = 0;
